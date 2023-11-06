@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--此时点击没有状态的变化，使用 StateListDrawable
+        设置前景色 foreground 之后会掩盖 文字和背景色，所以一般不设置-->
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_selector"
+        android:backgroundTint="@color/btn_color_selector"
+        android:text="@string/button" />
+
+</LinearLayout>

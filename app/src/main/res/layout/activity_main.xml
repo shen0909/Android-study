@@ -3,24 +3,49 @@ TextView 控件
 将控件放到容器里面
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:text="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!-- 长宽
-    match_parent
-    wrap_content
-    数字
+    match_parent:取容器的宽度
+    wrap_content:根据内部的内容自动确认宽度，不可超过容器的长宽
+    数字: 人为设置
+
+    id:为组件设置id
+    正规开发中，string 和 color 会写在类重
     -->
+<!--    <TextView-->
+<!--        android:id="@+id/tv_one"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/one_text"-->
+<!--        android:textColor="#FF000000"-->
+<!--        android:background="@color/teal_200"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:gravity="center"-->
+<!--        android:shadowColor="@color/cardview_light_background"-->
+<!--        android:shadowRadius="3.0"-->
+<!--        android:shadowDx="10"-->
+<!--        android:shadowDy="10"-->
+<!--        />-->
+
+    <!-- 跑马灯-->
     <TextView
-        android:id="@+id/tv_one"
+        android:id="@+id/paomadeng"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:text="学Android studio"
+        android:layout_height="wrap_content"
+        android:text="@string/paomadeng"
         android:textColor="#FF000000"
+        android:background="@color/teal_200"
         android:textSize="30sp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        android:gravity="start"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
 
 </LinearLayout>
