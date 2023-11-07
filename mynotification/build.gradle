@@ -1,4 +1,4 @@
- plugins {
+plugins {
     id 'com.android.application'
 }
 
@@ -6,7 +6,7 @@ android {
     compileSdk 29
 
     defaultConfig {
-        applicationId "com.example.firstproject"
+        applicationId "com.example.mynotification"
         minSdk 21
         targetSdk 33
         versionCode 1
