@@ -1,6 +1,7 @@
 package com.example.mynotification;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.NotificationCompat;
 
 import android.app.Notification;
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // toolBar 的点击事件
+        Toolbar toolbar = findViewById(R.id.tb_one);
+        toolbar.setNavigationOnClickListener(v -> System.out.println("我点击了toolbar的返回按键"));
 
         // 1、创建 NotificationManager
         /* 1、通过getSystemService(String) 方法 可以通过Android系统级服务的句柄，返回对应的对象
