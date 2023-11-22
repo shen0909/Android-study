@@ -8,7 +8,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tb_one"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
         android:background="@color/design_default_color_error"
         app:logo="@drawable/ic_baseline_thumb_up_24"
         app:navigationIcon="@drawable/ic_baseline_west_24"
@@ -27,9 +27,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="19sp"
+            android:text="自定义居中tollbar"
             android:textColor="@color/design_default_color_secondary"
-            android:text="自定义居中tollbar" />
+            android:textSize="19sp" />
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout

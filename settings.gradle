@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "firstProject"
 include ':app'
 include ':mynotification'
+include ':mylayout'
